@@ -1,0 +1,82 @@
+/* Paleta de colores del sitio */
+:root {
+    --azul: #2b48ec;
+    --azul-oscuro: #1b2a6b;
+    --fondo: #f3f5fb;
+    --texto: #2d3142;
+    --blanco: #ffffff;
+}
+
+/* Estilo general */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado y menú de navegación */
+header {
+    background-color: var(--azul);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+nav a:hover {
+    border-bottom-color: var(--blanco);
+}
+
+/* Contenido principal: tarjeta centrada */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Títulos */
+h1 {
+    color: var(--azul-oscuro);
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--azul);
+}
+
+h2 {
+    color: var(--azul);
+    margin-top: 2rem;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+footer p {
+    margin: 0;
+}
